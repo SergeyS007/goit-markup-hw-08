@@ -109,11 +109,16 @@
   width: 100vw;
   height: 100vh;
   padding: 40px;
+  overflow-y: scroll;
   background-color: $secondary-text-color;
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -205,8 +210,6 @@
     & .contact-mail-tel {
       display: flex;
       align-items: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
     }
     & .item + .item {
       margin-left: 50px;

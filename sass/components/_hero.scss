@@ -2,10 +2,6 @@
   // padding-bottom: 94px;
   background-color: $accent-background-color;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
 
   // max-width: 1600px;
   text-align: center;
@@ -29,9 +25,16 @@
     }
   }
 }
-.section.hero {
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+.section.hero .container {
+  @media screen and (max-width: 767px) {
+    padding: 118px 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 252px;
+  }
 }
 
 .hero-title {
@@ -44,6 +47,11 @@
   font-size: 26px;
   font-weight: 900;
   line-height: 1.61;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 

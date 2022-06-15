@@ -63,7 +63,15 @@
     flex-wrap: wrap;
   }
 }
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .portfolio-list-item {
+  display: block;
+  max-width: 100%;
+  height: auto;
   border: 1px solid #eeeeee;
   // max-width: 100%;
   @media screen and (max-width: 767px) {
@@ -126,6 +134,7 @@
   color: $portfolio-text-color;
 }
 .portfolio-box {
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
